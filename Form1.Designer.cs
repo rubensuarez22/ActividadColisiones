@@ -36,16 +36,19 @@
             // 
             // PCT_CANVAS
             // 
-            this.PCT_CANVAS.Location = new System.Drawing.Point(14, 11);
+            this.PCT_CANVAS.Location = new System.Drawing.Point(69, 52);
+            this.PCT_CANVAS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PCT_CANVAS.Name = "PCT_CANVAS";
-            this.PCT_CANVAS.Size = new System.Drawing.Size(772, 431);
+            this.PCT_CANVAS.Size = new System.Drawing.Size(660, 318);
+            this.PCT_CANVAS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PCT_CANVAS.TabIndex = 0;
             this.PCT_CANVAS.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.TIMER_Tic);
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -53,8 +56,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.PCT_CANVAS);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            //this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PCT_CANVAS)).EndInit();
             this.ResumeLayout(false);
 
